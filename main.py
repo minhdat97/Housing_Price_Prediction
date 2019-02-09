@@ -15,6 +15,12 @@ from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
 
-df_train = pd.read_csv('../input/train.csv')
+def run():
+    df_train = pd.read_csv('../input/train.csv')
+    df_train.columns
 
-df_train.columns
+def main():
+    run()
+    
+if __name__ == '__main__':
+    main()
