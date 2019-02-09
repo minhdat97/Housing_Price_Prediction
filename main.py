@@ -21,8 +21,8 @@ def run():
     if ipy is not None:
         ipy.run_line_magic('matplotlib', 'inline')
     df_train = pd.read_csv('input/train.csv')
-    df_train.columns
-    print(df_train)
+    
+    print(df_train.columns)
 
 def main():
     run()
