@@ -23,6 +23,7 @@ def run():
     df_train = pd.read_csv('input/train.csv')
     
     print(df_train.columns)
+    df_train['SalePrice'].describe()
 
 def main():
     run()
