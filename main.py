@@ -16,9 +16,10 @@ from IPython import get_ipython
 import warnings
 warnings.filterwarnings('ignore')
 
-get_ipython().run_line_magic('matplotlib', 'inline')
-
 def run():
+    ipy = get_ipython()
+    if ipy is not None:
+        ipy.run_line_magic('matplotlib', 'inline')
     df_train = pd.read_csv('input/train.csv')
     df_train.columns
 
