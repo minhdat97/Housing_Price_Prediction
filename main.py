@@ -22,6 +22,7 @@ def run():
         ipy.run_line_magic('matplotlib', 'inline')
     df_train = pd.read_csv('input/train.csv')
     df_train.columns
+    print(df_train)
 
 def main():
     run()
