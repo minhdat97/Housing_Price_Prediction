@@ -6,7 +6,7 @@ Created on Sat Feb  9 17:15:32 2019
 """
 
 import pandas as pd
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 #import seaborn as sns
 #import numpy as np
 #from scipy.stats import norm
@@ -14,6 +14,7 @@ import pandas as pd
 #from scipy import stats
 import warnings
 warnings.filterwarnings('ignore')
+%matplotlib inline
 
 def run():
     df_train = pd.read_csv('input/train.csv')
