@@ -16,7 +16,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def run():
-    df_train = pd.read_csv('./input/train.csv')
+    df_train = pd.read_csv('input/train.csv')
     df_train.columns
 
 def main():
